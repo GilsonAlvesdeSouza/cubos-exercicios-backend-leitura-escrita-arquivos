@@ -14,7 +14,9 @@ class EnderecoController {
       if (end.erro) {
         return res.status(404).json({ mensagem: "Cep não encontrado." });
       }
-      const result = enderecoService.save(end);
+
+      const result = await enderecoService.save(end);
+
       res.json(result);
     } catch (error) {
       res.status(500).json({ mensagem: getErrorMessage(error) });

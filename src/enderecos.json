@@ -1,1 +1,26 @@
-[{"cep":"75075-400","logradouro":"Rua 13","complemento":"","bairro":"Boa Vista","localidade":"Anápolis","uf":"GO","ibge":"5201108","gia":"","ddd":"62","siafi":"9221"}]
+[
+	{
+		"cep": "75075-400",
+		"logradouro": "Rua 13",
+		"complemento": "",
+		"bairro": "Boa Vista",
+		"localidade": "Anápolis",
+		"uf": "GO",
+		"ibge": "5201108",
+		"gia": "",
+		"ddd": "62",
+		"siafi": "9221"
+	},
+	{
+		"cep": "75075-210",
+		"logradouro": "Avenida Brasil Central",
+		"complemento": "",
+		"bairro": "Boa Vista",
+		"localidade": "Anápolis",
+		"uf": "GO",
+		"ibge": "5201108",
+		"gia": "",
+		"ddd": "62",
+		"siafi": "9221"
+	}
+]

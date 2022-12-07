@@ -38,7 +38,7 @@ class EnderecoService {
         await fs.writeFile(path.resolve(__dirname, "../enderecos.json"), file);
       }
     } catch (error) {
-      getErrorMessage(error);
+      throw new Error(getErrorMessage(error));
     }
   }
 }
