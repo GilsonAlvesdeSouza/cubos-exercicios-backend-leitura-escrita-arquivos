@@ -1,3 +1,3 @@
 import { ProductService } from "./ProductsServices";
-
-export { ProductService };
+import { EnderecoService } from "./EnderecosServices";
+export { ProductService, EnderecoService };
