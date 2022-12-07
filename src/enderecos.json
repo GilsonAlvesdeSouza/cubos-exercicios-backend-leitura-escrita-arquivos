@@ -1,19 +1,19 @@
 [
 	{
-		"cep": "75075-400",
-		"logradouro": "Rua 13",
-		"complemento": "",
-		"bairro": "Boa Vista",
-		"localidade": "Anápolis",
-		"uf": "GO",
-		"ibge": "5201108",
+		"cep": "23078-001",
+		"logradouro": "Avenida Brasil",
+		"complemento": "de 37680 a 49798 - lado par",
+		"bairro": "Campo Grande",
+		"localidade": "Rio de Janeiro",
+		"uf": "RJ",
+		"ibge": "3304557",
 		"gia": "",
-		"ddd": "62",
-		"siafi": "9221"
+		"ddd": "21",
+		"siafi": "6001"
 	},
 	{
-		"cep": "75075-210",
-		"logradouro": "Avenida Brasil Central",
+		"cep": "75075-400",
+		"logradouro": "Rua 13",
 		"complemento": "",
 		"bairro": "Boa Vista",
 		"localidade": "Anápolis",

@@ -19,8 +19,9 @@ let arrayEnderecos: Array<EnderecoInterface> = [];
 
 class EnderecoService {
   async save(end: EnderecoInterface) {
+    let enderecos: any = "";
     try {
-      const enderecos = await fs.readFile(
+      enderecos = await fs.readFile(
         path.resolve(__dirname, "../enderecos.json")
       );
       const resultEnderecos = enderecos.toString();
@@ -28,7 +29,7 @@ class EnderecoService {
         arrayEnderecos.push(end);
         const file = JSON.stringify(arrayEnderecos);
         await fs.writeFile(path.resolve(__dirname, "../enderecos.json"), file);
-        return;
+        return arrayEnderecos;
       }
       arrayEnderecos = JSON.parse(resultEnderecos);
       const verificaEndereco = arrayEnderecos.find((el) => el.cep === end.cep);
@@ -36,7 +37,13 @@ class EnderecoService {
         arrayEnderecos.push(end);
         const file = JSON.stringify(arrayEnderecos);
         await fs.writeFile(path.resolve(__dirname, "../enderecos.json"), file);
+        return arrayEnderecos;
       }
+      enderecos = await fs.readFile(
+        path.resolve(__dirname, "../enderecos.json")
+      );
+
+      return (arrayEnderecos = JSON.parse(enderecos.toString()));
     } catch (error) {
       throw new Error(getErrorMessage(error));
     }

@@ -17,7 +17,9 @@ class EnderecoController {
 
       const result = await enderecoService.save(end);
 
-      res.json(result);
+      const resultCount = { count: result.length, result };
+
+      res.json(resultCount);
     } catch (error) {
       res.status(500).json({ mensagem: getErrorMessage(error) });
     }
